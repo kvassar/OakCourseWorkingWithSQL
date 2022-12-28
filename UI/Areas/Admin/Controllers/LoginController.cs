@@ -27,7 +27,7 @@ namespace UI.Areas.Admin.Controllers
                 UserDTO user = userbll.GetUserWithUsernameAndPassword(model);
                 if(user.ID != 0)
                 {
-                    return RedirectToAction("index", "Post");
+                    return RedirectToAction("Index", "Post");
                 }
                 else
                 {

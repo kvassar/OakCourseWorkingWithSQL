@@ -16,7 +16,7 @@ namespace BLL
         {
             UserDTO dto = new UserDTO();
             dto = userdao.GetUserWithUsernameAndPassword(model);
-            return model;
+            return dto;
         }
     }
 }
